@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 실습2. form 형식 만들기</title>
+</head>
+<body>
+    <form>
+        <h1>Form 형식 따라만들기</h1>
+        <h2>설문조사</h2>
+        <label>
+            이름<input type="text">
+        </label> 
+        <label>
+            이메일
+            <input type="text" name="" id="" placeholder="love@example.com">
+        </label>
+        <br>
+        <br>
+        <h2>나이</h2>
+        <!-- label 감싸는거랑 안감싸는거? id와 for 동일 -->
+        <input type="radio" name="age" id="teen"><label for="teen">10대</label>
+        <input type="radio" name="age" id="teen"><label for="twenty">20대</label>
+        <input type="radio" name="age" id="teen"><label for="thirty">30대</label>
+        <input type="radio" name="age" id="teen"><label for="forty">40대</label>
+        <input type="radio" name="age" id="teen"><label for="fifty">50대</label>
+        <input type="radio" name="age" id="teen"><label for="sixty">60대 이상</label>
+        <br>
+        <br>
+        <h2>원하는 강의(복수응답가능)</h2>
+        <input type="checkbox" name="lecture" id="html"><label for="html">html</label>
+        <input type="checkbox" name="lecture" id="js"><label for="js">js</label>
+        <input type="checkbox" name="lecture" id="css"><label for="css">css</label>
+        <br>
+        <br>
+        <textarea name="" id="" cols="100" rows="10" placeholder="하고 싶은 말을 써주세요"></textarea>
+        <label for="submit"></label>
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>
