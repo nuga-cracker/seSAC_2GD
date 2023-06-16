@@ -1,0 +1,7 @@
+p.lion{background:red}
+.zoo ul .lion {background-color:greenyellow;}
+#tiger {background:yellow}
+.lion {color:sienna;}
+.zoo .lion {font-weight: bold;}
+.zoo ul #tiger + li {background:skyblue}
+.zoo ul li.lion ~ li  {background:orange} 

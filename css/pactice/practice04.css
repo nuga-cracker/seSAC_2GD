@@ -1,0 +1,29 @@
+form {
+width: 400px;
+}
+/* hover */
+h3:hover{background:#333; color:#fff;}
+
+/* focus */
+textarea {width: 100%;}
+textarea:focus{background:#ffeeee;}
+
+/* checked */
+input#red:checked+label {background:red; color:#fff;}
+input#yellow:checked+label {background:yellow; color:#333;}
+input#blue:checked+label {background:blue; color:#fff;}
+
+/* active */
+button {
+float: right;
+padding: 5px 15px;
+background-color: #f96666;
+color: white;
+font-size: 17px;
+border: none;
+border-radius: 5px;
+}
+
+button:active{background:#ddd; color:#f96666;}
+
+
