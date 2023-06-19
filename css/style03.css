@@ -45,3 +45,69 @@ input#rabbit:checked + label {
 
 
 
+/* 
+    - 선택자:first-child {} : E가 첫번째 자식이라면 선택
+    - E:last-child {} : E가 마지막 자식이라면 선택
+    - E:last-child(n){} : E가 n번쨰 자식이라면 선택
+    - E:nth-of-type(n){} : E요소 중에 n번째를 선택
+    - E:not(xyz){} : xyz가 아닌 E요소를 선택
+*/
+
+
+.zoo > * {
+    background:green;
+    color:white;
+    font-size:20px;
+}
+
+.zoo > li:last-child {
+    background:black;
+}
+
+.zoo > li:first-child {
+    background:yellow;
+}
+
+.zoo > li:nth-of-type(1) {
+    background:blue;
+}
+
+.zoo > *:first-child{
+    background:yellowgreen;
+}
+
+/* nth는 선택자와 일치하는 태그만 선택 */
+.zoo > li:nth-child(odd) {
+    background:pink;
+}
+
+
+
+/* 가상요소선택자 */
+/* ::after, ::before
+*/
+
+.h3 {background:yellow}
+
+.h3::after{
+    content:" after";
+    color: gray;
+}
+
+.h3::before{
+    content:"";
+    display:inline-block;
+    width: 2px;
+    height:50px;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
