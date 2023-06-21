@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z-index 애벌레</title>
+    <style>
+      .container {
+        position: relative;
+        width: 500px;
+        height: 120px;
+        top: 250px;
+      }
+
+      .container img {
+        position: absolute;
+        width: 500px;
+        height: 120px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+      .circle {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      .circle1 {
+        position: absolute;
+        bottom: 170px;
+        left: 100px;
+        background-color: chartreuse;
+      }
+      .circle2 {
+        position: absolute;
+        bottom: 130px;
+        left: 120px;
+        background-color: greenyellow;
+      }
+      .circle3 {
+        position: absolute;
+        bottom: 110px;
+        left: 140px;
+        background-color: darkolivegreen;
+      }
+      .circle4 {
+        position: absolute;
+        bottom: 80px;
+        left: 160px;
+        background-color: darkseagreen;
+      }
+      .circle5 {
+        position: absolute;
+        bottom: 40px;
+        left: 180px;
+        background-color: rgb(162, 227, 51);
+      }
+
+      .eyeball {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border-radius: 50%;
+      }
+      .pupil {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 5px;
+        left: 0px;
+        background: #333;
+        border-radius: 50%;
+      }
+      .mouth {
+        position: absolute;
+        bottom: 8px;
+        left: 5px;
+        width: 10px;
+        height: 5px;
+        border-radius: 20px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle circle1">
+        <div class="eyeball">
+          <div class="pupil"></div>
+        </div>
+        <div class="mouth"></div>
+      </div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+      <div class="circle circle4"></div>
+      <div class="circle circle5"></div>
+      <img src="./img/grass.png" alt="grass" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습. 인스타 푸</title>
+    <style>
+      .insta_wrap {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+        padding: 10px;
+      }
+
+      .insta_margin {
+        position: absolute;
+        width: 250px;
+        top: 10px;
+        left: 10px;
+        height: 250px;
+        border-radius: 50%;
+        background: #fff;
+      }
+
+      .insta_img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        background: url(./img/pooh.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="insta_wrap">
+      <div class="insta_margin">
+        <div class="insta_img"></div>
+      </div>
+    </div>
+  </body>
+</html>

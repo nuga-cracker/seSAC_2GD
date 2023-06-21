@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square{width:200px; height:200px; border-width: 2px; border-style: solid; border-color:purple; }
+        .square01{width:200px; height:200px; border-width: 2px; border-style: solid; border-color:purple}
+        .square02{width:200px; height:200px; border:5px solid red;}
+        .square03{width:200px; height:100px; border-right:3px dashed blue;}
+        .square04{width:200px; height:200px; border-bottom:10px dotted green}
+        .rounded {border-radius: 50%;}
+
+        .box-sizing {padding:20px; border:15px solid red; background-color: blanchedalmond}
+        .content-box{ 
+            /* 기본값 */
+            box-sizing:border-box;
+         }
+        .border-box{box-sizing:border-box;}
+
+        .d-none {
+        /* display: none; */
+        background-color: red;
+        }
+        .invisible {
+        /* visibility: hidden; */
+        background-color: orangered;
+        }
+        .opacity-0 {
+        /* opacity: 0; *//
+        background-color: tomato;
+        }
+
+        .blue_box {width:200px; height:200px; background:blue;}
+        .blue_box:hover {opacity: 0;}
+        .overflow-hidden{overflow: hidden;}
+        .overflow-auto{overflow: auto; /* 넘칠때만 스크롤 생성 */}
+        .overflow-scroll{overflow: scroll; /* 넘치지않아도 스크롤 */}
+        .overflow-visible{overflow: visible; /* 기본값, 넘치도록 다 보여줌 */}
+    </style>
+</head>
+<body>
+    <div class="square01">d</div>
+    <div class="square02">d</div>
+    <div class="square03">d</div>
+    <div class="square04">d</div>
+    <div class="rounded">d</div>
+
+    <hr>
+    <h2>box-sizing</h2>
+    <div class="square box-sizing border-box"></div>
+    <div class="square box-sizing border-box"></div>
+
+    <hr>
+    <h2>모습 숨기기</h2>
+    <div class="square">original</div>
+    <div class="square d-none">d-none</div>
+    <div class="square invisible">invisible</div>
+    <div class="square opacity-0">opacity-0</div>
+    <div class="square">original</div>
+
+    <hr>
+    <h2>실습. 요소 마우스올리면 사라지게 만들기</h2>
+    <div class="blue_box"></div>
+
+    <hr>
+    <h2>overflow</h2>
+    <div class="square overflow-hidden">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, nemo dolore. Saepe, repellat! Atque magni vel rem fugit tempore, ad quo eligendi laudantium? Possimus totam sit assumenda voluptate, ducimus asperiores?</p>
+        <img src="/css/img/pooh.png" alt="푸"> 
+    </div>
+    <div class="square overflow-auto">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, nemo dolore. Saepe, repellat! Atque magni vel rem fugit tempore, ad quo eligendi laudantium? Possimus totam sit assumenda voluptate, ducimus asperiores?</p>
+        <img src="/css/img/pooh.png" alt="푸"> 
+    </div>
+    <div class="square overflow-scroll">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, nemo dolore. Saepe, repellat! Atque magni vel rem fugit tempore, ad quo eligendi laudantium? Possimus totam sit assumenda voluptate, ducimus asperiores?</p>
+        <img src="/css/img/pooh.png" alt="푸"> 
+    </div>
+    <div class="square overflow-visivle">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, nemo dolore. Saepe, repellat! Atque magni vel rem fugit tempore, ad quo eligendi laudantium? Possimus totam sit assumenda voluptate, ducimus asperiores?</p>
+        <img src="/css/img/pooh.png" alt="푸"> 
+    </div>
+    
+</body>
+</html>

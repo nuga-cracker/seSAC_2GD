@@ -1,0 +1,28 @@
+.d_block{
+    background:aqua;
+    border:1px solid black;
+    width: 100px;
+    height: 100px;
+    padding:30px;
+    margin:20px;
+}
+
+.d_inline {display:inline; background:  pink; border: 1px solid blue;width: 100px;
+    height: 100px; margin:20px;padding:30px;}
+
+.d_inline_block {display:inline-block; background: yellowgreen; border: 1px solid gray;width: 100px;
+    height: 100px;margin:20px;padding:30px;}
+
+
+.parent {width: 450px; height:200px; background:orange}    
+.parent .min {min-width: 400px; height:100px; background:red}
+.parent .max {max-width: 400px; background-color: green; height:100px;}
+
+
+.box {background:aqua; border:1px solid black}
+.box-px {width: 50px; height: 50px;}
+.box-view {width: 50vw; height: 50vh;}
+.box-per {width: 50%; height:50%;}
+
+.rem {font-size:2rem;}
+.em {font-size:2em;}

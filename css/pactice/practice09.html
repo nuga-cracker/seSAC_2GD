@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background 실습 배경 적용하기</title>
+    <style>
+      .container > div {
+        width: 800px;
+        height: 500px;
+        border: 1px solid #ddd;
+        background-color: skyblue;
+      }
+
+      .container .img1 {
+        background-repeat: repeat-x;
+        background-image: url("https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a");
+      }
+      .container .img2 {
+        background-size: contain;
+        background-image: url("https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a");
+        background-repeat: no-repeat;
+        background-position: 30px 0 0 100px;
+      }
+      .container .img3 {
+        background-image: url("https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img1">1</div>
+      <div class="img2">2</div>
+      <div class="img3">3</div>
+    </div>
+  </body>
+</html>

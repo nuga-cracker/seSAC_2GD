@@ -22,3 +22,14 @@ font-family: 'Diphylleia', serif;
 
 .gg_font {font-family: 'Diphylleia', serif; font-family: 'Gasoek One', sans-serif;}
 .nn_font {font-family: 'RixMomsBlanketR';}
+
+
+/*  */
+.container{width: 500px; background:aliceblue}
+.sentences {font-weight: 400; font-size: 1em; 
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration: overline;
+}
+
+a{ text-decoration: none; color:black}
