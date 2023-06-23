@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform & Transition</title>
+    <style>
+      .img_box {
+        background-color: blanchedalmond;
+        width: 400px;
+        height: 250px;
+      }
+      .img_box img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        border: 1px solid #cd1;
+      }
+
+      .img_box img:hover {
+        transform: translateX(200px);
+        transform: translateY(200px);
+        transform: scale(1.2);
+        transform: perspective(100px) rotateY(180deg);
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        margin-bottom: 1rem;
+      }
+      /* 
+      Transition-property 속성 이름
+      어떤 속성에 transition을 줄건지
+      transtion-duration (transition의 필수속성)
+      몇 초 동안 변화가 일어날지
+      transition-timing function: 시간 함수
+      ease(default)
+      transition-delay : 동작의 시작 시간을 얼마나 늦출지
+    */
+      .box1:hover {
+        transition-property: width;
+        transition-duration: 1s;
+        background: red;
+        width: 200px;
+      }
+
+      .box2 {
+        transition: all 2s ease-in 1s;
+      }
+
+      .box2:hover {
+        opacity: 0.7;
+        background-color: aqua;
+        border-radius: 50%;
+        transform: translateX(50px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Transform</h2>
+    <div class="img_box">
+      <img src="./img/lion.png" alt="lion" />
+    </div>
+
+    <hr />
+
+    <h2>Transition</h2>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+  </body>
+</html>
