@@ -38,9 +38,6 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
-.container .heroes a:hover {
-  color: #fff;
-}
 
 .container .heroes .hero .image {
   width: 100%;
@@ -55,6 +52,9 @@ body {
 .container .heroes .hero:hover {
   border: 6px solid #fff;
   z-index: 99;
+}
+.container .heroes .hero:hover a {
+  color: #fff;
 }
 
 /* 로고 - 수정하지 않아도 됩니다. */

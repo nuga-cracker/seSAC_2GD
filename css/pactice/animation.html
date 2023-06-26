@@ -8,33 +8,33 @@
       .textbox {
         position: relative;
         width: 100%;
-        animation-name: box;
-        animation-duration: 3s;
+        animation-name: slide;
+        animation-duration: 4s;
         animation-iteration-count: 1;
         animation-timing-function: linear;
       }
 
-      @keyframes box {
-        0% {
-          left: 100%;
+      @keyframes slide {
+        from {
+          width: 300%;
+          margin-left: 100%;
         }
 
-        50% {
-          left: 50%;
-        }
-        100% {
-          left: 0;
+        to {
+          width: 100%;
+          margin-left: 0;
         }
       }
     </style>
   </head>
+
   <body>
-    <div class="textbox">
+    <p class="textbox">
       "As I relax on the sofa and gaze around a room a thought hits me: this is
       exactly the place I've been looking for all my life. A little hideaway in
       some sinkhole somewhere. I'd always thought of it as a secret, imaginary
       place, and can barely believe that it actually exists. I close my eyes and
       take a breath, and wonder of it all settles over me like a gentle cloud."
-    </div>
+    </p>
   </body>
 </html>

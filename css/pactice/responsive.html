@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>크기에따라 자리바꾸기</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        margin: 10px;
+      }
+
+      @media (min-width: 700px) {
+        .container {
+          flex-direction: row;
+        }
+        .box {
+          background-color: blueviolet;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

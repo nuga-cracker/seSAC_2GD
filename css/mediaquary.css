@@ -1,0 +1,43 @@
+body {
+  background-color: aquamarine;
+}
+
+/* 미디어 쿼리
+max로 작성시작했으면 쭉 max
+min으로         쭉 min으로 작성
+
+반응형 페이지를 만들때
+핸드폰을 기준으로 할지 컴퓨터를 기준으로 할지 정한후 제작
+먼저만드는 페이지가 큰 화면 컴푸터는 max를 기준
+작은 화면인 폰은 min을 기준
+*/
+@media screen and (max-width: 700px) {
+  body {
+    background-color: coral;
+  }
+  h1 {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: steelblue;
+  }
+  h1 {
+    color: #fff;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    background-color: forestgreen;
+  }
+  h2 {
+    display: block;
+  }
+
+  h1 {
+    display: none;
+  }
+}
