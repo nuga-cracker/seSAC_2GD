@@ -1,0 +1,94 @@
+/* 
+Transition vs animation
+
+- transition
+(hover, onclick, active 등의 이벤트에의해 발생됨)
+
+- animation
+('중간스텝'을 지정해 보다 세밀한 스타일 전환 가능)
+keyframes를 사용
+
+*/
+
+.box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  animation-name: box;
+  animation-duration: 3s;
+  animation-iteration-count: 2.5;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+}
+
+@keyframes box {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 100px;
+  }
+
+  50% {
+    left: 200px;
+  }
+
+  75% {
+    left: 100px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.ball {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #333;
+
+  /* 단축 속성
+    "alternate 다시반복해줌"
+    0-100%가 달라서 뚝뚝 끊기는 걸 부드럽게 다시 반복해줌
+  */
+  animation: bounce1 1s ease-out infinite alternate;
+}
+
+.ball2 {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  position: absolute;
+  border-radius: 50%;
+  left: 300px;
+  animation: bounce2 1s infinite;
+}
+
+@keyframes bounce1 {
+  /* 0% */
+  to {
+    top: 0;
+  }
+  /* 100% */
+  from {
+    top: 300px;
+  }
+}
+
+@keyframes bounce2 {
+  /* 0% */
+  to,
+  from {
+    bottom: 0;
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    bottom: 300px;
+    animation-timing-function: ease-in;
+    background-color: red;
+  }
+}
