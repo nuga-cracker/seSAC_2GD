@@ -22,7 +22,6 @@ let engScore = prompt("영어 점수를 입력 하세요");
 
 console.log(mathScore);
 console.log(engScore);
-
 console.log(typeof mathScore);
 
 mathScore = Number(mathScore);
