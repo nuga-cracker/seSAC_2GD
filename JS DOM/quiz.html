@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz1</title>
+    <style></style>
+  </head>
+  <body>
+    <h2>태그내부의 글자 변경하기</h2>
+    <div>민트 초코는 <span id="mincho">맛있다 >_< </span></div>
+
+    <h2>속성변경해보기</h2>
+    <img class="pooh" src="/css/img/pooh.png" alt="푸" width="300px" />
+    <p>이요르</p>
+    <script>
+      // 민트초코는 맛없따로 변경
+      // 방법1
+      //   const mincho = document.getElementById("mincho");
+      //   mincho.innerText = "맛없다x_x";
+      //   console.log(mincho.getAttribute("src"));
+
+      // 방법2 queryㄴelector
+      //document.querySelector("span").innerText = "맛없다";
+
+      // img 태그
+      // src 'eeyore.png' 로 변경
+      // alt '이요르' 로 변경
+      // 가로 150px 로 변경
+
+      const img = document.querySelector("img");
+      img.src = "/css/img/eeyore.png"; //점으로 속성 변경
+      img.alt = "이요르";
+      img.setAttribute("width", "150");
+    </script>
+  </body>
+</html>
